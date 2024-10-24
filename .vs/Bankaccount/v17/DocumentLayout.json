@@ -1,0 +1,89 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\fanfinlandi1\\Desktop\\Bankaccount\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D4178DE0-0F32-400F-A47B-98C57BA3FAF6}|Bankaccount\\Bankaccount.csproj|c:\\users\\fanfinlandi1\\desktop\\bankaccount\\bankaccount\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4178DE0-0F32-400F-A47B-98C57BA3FAF6}|Bankaccount\\Bankaccount.csproj|solutionrelative:bankaccount\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4178DE0-0F32-400F-A47B-98C57BA3FAF6}|Bankaccount\\Bankaccount.csproj|C:\\Users\\fanfinlandi1\\Desktop\\Bankaccount\\Bankaccount\\Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D4178DE0-0F32-400F-A47B-98C57BA3FAF6}|Bankaccount\\Bankaccount.csproj|solutionrelative:Bankaccount\\Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4178DE0-0F32-400F-A47B-98C57BA3FAF6}|Bankaccount\\Bankaccount.csproj|c:\\users\\fanfinlandi1\\desktop\\bankaccount\\bankaccount\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4178DE0-0F32-400F-A47B-98C57BA3FAF6}|Bankaccount\\Bankaccount.csproj|solutionrelative:bankaccount\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4178DE0-0F32-400F-A47B-98C57BA3FAF6}|Bankaccount\\Bankaccount.csproj|c:\\users\\fanfinlandi1\\desktop\\bankaccount\\bankaccount\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4178DE0-0F32-400F-A47B-98C57BA3FAF6}|Bankaccount\\Bankaccount.csproj|solutionrelative:bankaccount\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Account.cs",
+              "DocumentMoniker": "C:\\Users\\fanfinlandi1\\Desktop\\Bankaccount\\Bankaccount\\Account.cs",
+              "RelativeDocumentMoniker": "Bankaccount\\Account.cs",
+              "ToolTip": "C:\\Users\\fanfinlandi1\\Desktop\\Bankaccount\\Bankaccount\\Account.cs",
+              "RelativeToolTip": "Bankaccount\\Account.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T16:17:06.643Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\fanfinlandi1\\Desktop\\Bankaccount\\Bankaccount\\Form1.cs",
+              "RelativeDocumentMoniker": "Bankaccount\\Form1.cs",
+              "ToolTip": "C:\\Users\\fanfinlandi1\\Desktop\\Bankaccount\\Bankaccount\\Form1.cs",
+              "RelativeToolTip": "Bankaccount\\Form1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T16:23:49.422Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Projekt]",
+              "DocumentMoniker": "C:\\Users\\fanfinlandi1\\Desktop\\Bankaccount\\Bankaccount\\Form1.cs",
+              "RelativeDocumentMoniker": "Bankaccount\\Form1.cs",
+              "ToolTip": "C:\\Users\\fanfinlandi1\\Desktop\\Bankaccount\\Bankaccount\\Form1.cs [Projekt]",
+              "RelativeToolTip": "Bankaccount\\Form1.cs [Projekt]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T16:16:46.446Z",
+              "IsPinned": true,
+              "EditorCaption": " [Projekt]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\fanfinlandi1\\Desktop\\Bankaccount\\Bankaccount\\Program.cs",
+              "RelativeDocumentMoniker": "Bankaccount\\Program.cs",
+              "ToolTip": "C:\\Users\\fanfinlandi1\\Desktop\\Bankaccount\\Bankaccount\\Program.cs",
+              "RelativeToolTip": "Bankaccount\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T20:40:42.468Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
