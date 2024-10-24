@@ -30,3 +30,4 @@ C:\Users\fanfinlandi1\Desktop\Bankaccount\Bankaccount\obj\Debug\net8.0-windows\r
 C:\Users\fanfinlandi1\Desktop\Bankaccount\Bankaccount\obj\Debug\net8.0-windows\Bankaccount.pdb
 C:\Users\fanfinlandi1\Desktop\Bankaccount\Bankaccount\obj\Debug\net8.0-windows\Bankaccount.genruntimeconfig.cache
 C:\Users\fanfinlandi1\Desktop\Bankaccount\Bankaccount\obj\Debug\net8.0-windows\ref\Bankaccount.dll
+C:\Users\Kacper\Documents\projekty\Bankaccount\Bankaccount\obj\Debug\net8.0-windows\Bankaccount.sourcelink.json

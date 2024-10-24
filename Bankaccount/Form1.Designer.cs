@@ -39,6 +39,8 @@
             datebtn = new Button();
             label1 = new Label();
             label2 = new Label();
+            Email = new TextBox();
+            passmail = new TextBox();
             SuspendLayout();
             // 
             // button1
@@ -69,7 +71,7 @@
             // 
             // Date
             // 
-            Date.Location = new Point(35, 228);
+            Date.Location = new Point(35, 286);
             Date.Name = "Date";
             Date.PlaceholderText = "Data urodzenia:";
             Date.ReadOnly = true;
@@ -108,7 +110,7 @@
             // 
             // datebtn
             // 
-            datebtn.Location = new Point(35, 258);
+            datebtn.Location = new Point(35, 316);
             datebtn.Name = "datebtn";
             datebtn.Size = new Size(106, 28);
             datebtn.TabIndex = 7;
@@ -135,11 +137,32 @@
             label2.TabIndex = 9;
             label2.Text = "Stwórz konto bankowe";
             // 
+            // Email
+            // 
+            Email.Location = new Point(35, 228);
+            Email.Name = "Email";
+            Email.PlaceholderText = "Podaj e-mail:";
+            Email.Size = new Size(165, 23);
+            Email.TabIndex = 10;
+            Email.TextChanged += email_TextChanged;
+            // 
+            // passmail
+            // 
+            passmail.Location = new Point(35, 257);
+            passmail.Name = "passmail";
+            passmail.PasswordChar = '*';
+            passmail.PlaceholderText = "Podaj Hasło:";
+            passmail.Size = new Size(165, 23);
+            passmail.TabIndex = 11;
+            passmail.TextChanged += passmail_TextChanged;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(passmail);
+            Controls.Add(Email);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(datebtn);
@@ -171,5 +194,7 @@
         private Button datebtn;
         private Label label1;
         private Label label2;
+        private TextBox Email;
+        private TextBox passmail;
     }
 }

@@ -9,7 +9,7 @@ namespace Bankaccount
         private Account konto;
         private bool dateSelected = false;
         private int id = 0;
-        
+
         public Form1()
         {
             InitializeComponent();
@@ -17,17 +17,15 @@ namespace Bankaccount
 
         private void Date_TextChanged(object sender, EventArgs e)
         {
-
         }
 
         private void checkage()
         {
-
             DateTime pelnoletnosc = dataurodzenia.SelectionStart;
 
-            if (pelnoletnosc.Year > 2006)
+           
+            if (DateTime.Now.Year - pelnoletnosc.Year < 18)
             {
-               
                 Date.Text = string.Empty;
                 dateSelected = false;
             }
@@ -47,18 +45,32 @@ namespace Bankaccount
         {
             string name = nazwa.Text;
             string surname = Surname.Text;
+            string email = Email.Text;
+            string password = passmail.Text;
 
            
-
-
             if (string.IsNullOrEmpty(name) || string.IsNullOrEmpty(surname) || !dateSelected)
             {
                 MessageBox.Show("Proszê wprowadziæ poprawne dane");
                 return;
-                checkage();
             }
 
-            
+          
+            if (!this.Email.Text.Contains('@') || !this.Email.Text.Contains('.'))
+            {
+                MessageBox.Show("Wpisz Poprawny E-mail!", "Niepoprawny E-mail", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Email.Text = string.Empty;
+                return;
+            }
+
+            if (passmail.Text.Length < 8)
+            {
+
+
+                MessageBox.Show("Za krótke has³o");
+            }
+
+
 
             string accountnumber = gennumber();
             string sex = checksex();
@@ -66,29 +78,27 @@ namespace Bankaccount
             {
                 return;
             }
-            konto = new Account(id++, name, surname, accountnumber, dataurodzenia.SelectionStart)
-            {
-                Sex = sex
-            };
-            
-                
-            
+
+         
+            konto = new Account(email, password, name, surname, accountnumber, dataurodzenia.SelectionStart);
+            konto.Sex = sex;
 
             MessageBox.Show("Konto utworzone pomyœlnie.\n" +
-                "P³eæ:"+konto.Sex + " \n"+
+                "P³eæ: " + konto.Sex + "\n" +
                 "Imiê: " + konto.Name + "\n" +
                 "Nazwisko: " + konto.Surname + "\n" +
                 "Numer konta: " + konto.AccountNumber + "\n" +
+                "Email: " + konto.Email + "\n" +
+                "Has³o: " + konto.Password + "\n" +
                 "Data urodzenia: " + konto.DateOfBirth.ToShortDateString());
-            clear();
+                
 
-            
+           
+            id++;
             label1.Text = "Liczba zarejestrowanych kont: " + id;
 
-
+            clear();
         }
-
-
 
         void clear()
         {
@@ -97,16 +107,18 @@ namespace Bankaccount
             Date.Text = string.Empty;
             male.Checked = false;
             female.Checked = false;
+            Email.Text = string.Empty;
+            passmail.Text = string.Empty;
         }
+
         private string gennumber()
         {
             Random random = new Random();
-            string accountNumber = "1"; 
+            string accountNumber = "1";
 
-            
             for (int i = 0; i < 25; i++)
             {
-                accountNumber += random.Next(0, 10).ToString(); 
+                accountNumber += random.Next(0, 10).ToString();
             }
 
             return accountNumber;
@@ -114,7 +126,6 @@ namespace Bankaccount
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
         }
 
         private void checkdate()
@@ -127,11 +138,8 @@ namespace Bankaccount
             checkdate();
         }
 
-
-         private string  checksex()
+        private string checksex()
         {
-            
-            string Sex ="";
             if (male.Checked && female.Checked)
             {
                 MessageBox.Show("Proszê wybraæ tylko jedn¹ p³eæ.");
@@ -151,9 +159,22 @@ namespace Bankaccount
                 return null;
             }
         }
+
         private void male_CheckedChanged(object sender, EventArgs e)
         {
+        }
+
+        private void email_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void passmail_TextChanged(object sender, EventArgs e)
+        {
+
+           
+
 
         }
     }
+
 }
