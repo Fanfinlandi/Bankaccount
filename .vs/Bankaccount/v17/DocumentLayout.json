@@ -7,8 +7,8 @@
       "RelativeMoniker": "D:0:0:{D4178DE0-0F32-400F-A47B-98C57BA3FAF6}|Bankaccount\\Bankaccount.csproj|solutionrelative:bankaccount\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D4178DE0-0F32-400F-A47B-98C57BA3FAF6}|Bankaccount\\Bankaccount.csproj|C:\\Users\\Kacper\\Documents\\projekty\\Bankaccount\\Bankaccount\\Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D4178DE0-0F32-400F-A47B-98C57BA3FAF6}|Bankaccount\\Bankaccount.csproj|solutionrelative:Bankaccount\\Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{D4178DE0-0F32-400F-A47B-98C57BA3FAF6}|Bankaccount\\Bankaccount.csproj|C:\\Users\\Kacper\\Documents\\projekty\\Bankaccount\\bankaccount\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D4178DE0-0F32-400F-A47B-98C57BA3FAF6}|Bankaccount\\Bankaccount.csproj|solutionrelative:bankaccount\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D4178DE0-0F32-400F-A47B-98C57BA3FAF6}|Bankaccount\\Bankaccount.csproj|c:\\users\\kacper\\documents\\projekty\\bankaccount\\bankaccount\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -36,11 +36,10 @@
               "RelativeDocumentMoniker": "Bankaccount\\Account.cs",
               "ToolTip": "C:\\Users\\Kacper\\Documents\\projekty\\Bankaccount\\Bankaccount\\Account.cs",
               "RelativeToolTip": "Bankaccount\\Account.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAgwCcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAwCYAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-23T16:17:06.643Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -50,7 +49,7 @@
               "RelativeDocumentMoniker": "Bankaccount\\Form1.cs",
               "ToolTip": "C:\\Users\\Kacper\\Documents\\projekty\\Bankaccount\\Bankaccount\\Form1.cs",
               "RelativeToolTip": "Bankaccount\\Form1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAAwD4AAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-23T16:23:49.422Z",
               "IsPinned": true,
@@ -66,8 +65,7 @@
               "RelativeToolTip": "Bankaccount\\Form1.cs [Projekt]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-23T16:16:46.446Z",
-              "IsPinned": true,
-              "EditorCaption": " [Projekt]"
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -77,10 +75,9 @@
               "RelativeDocumentMoniker": "Bankaccount\\Program.cs",
               "ToolTip": "C:\\Users\\Kacper\\Documents\\projekty\\Bankaccount\\Bankaccount\\Program.cs",
               "RelativeToolTip": "Bankaccount\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T20:40:42.468Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-23T20:40:42.468Z"
             }
           ]
         }
