@@ -11,6 +11,8 @@ namespace Bankaccount
 {
     public class Account
     {
+        public static List<Account> konta = new List<Account>(); 
+
         public string Sex { get; set; }
         public string Name { get; set; }
         public string Surname { get; set; }
@@ -27,21 +29,17 @@ namespace Bankaccount
             DateOfBirth = dateOfBirth;
             Email = email;
             Password = password;
+
+            konta.Add(this);
         }
 
         public void DisplayData()
         {
-            Console.WriteLine("Witaj w systemie Bankowym Admina,o to dane zarejestrowanych kont:");
-            Debug.WriteLine("Płeć: " + Sex);
-            Debug.WriteLine("Imię: " + Name);
-            Debug.WriteLine("Nazwisko: " + Surname);
-            Debug.WriteLine("Data urodzenia: " + DateOfBirth.ToShortDateString());
-            Debug.WriteLine("Numer konta: " + AccountNumber);           
-            Debug.WriteLine("Email: " + Email);
-            Debug.WriteLine("Hasło: " + Password);
-            Debug.WriteLine("-----------------------");
-
-
+            Console.WriteLine("Imię: " + Name);
+            Console.WriteLine("Nazwisko: " + Surname);
+            Console.WriteLine("Numer konta: " + AccountNumber);
+            Console.WriteLine("Data urodzenia: " + DateOfBirth.ToShortDateString());
+            Console.WriteLine("Płeć: " + Sex);
         }
     }
 

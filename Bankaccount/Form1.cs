@@ -7,7 +7,7 @@ namespace Bankaccount
 {
     public partial class Form1 : Form
     {
-        private List<Account> konta = new List<Account>();
+        private Account konto;
         private bool dateSelected = false;
         private int id = 0;
 
@@ -24,7 +24,7 @@ namespace Bankaccount
         {
             DateTime pelnoletnosc = dataurodzenia.SelectionStart;
 
-           
+
             if (DateTime.Now.Year - pelnoletnosc.Year < 18)
             {
                 Date.Text = string.Empty;
@@ -44,69 +44,9 @@ namespace Bankaccount
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string name = nazwa.Text;
-            string surname = Surname.Text;
-            string email = Email.Text;
-            string password = passmail.Text;
-
-           
-            if (string.IsNullOrEmpty(name) || string.IsNullOrEmpty(surname) || !dateSelected)
-            {
-                MessageBox.Show("Proszê wprowadziæ poprawne dane");
-                return;
-            }
-            if (passmail.Text.Length < 8)
-            {
 
 
-                MessageBox.Show("Za krótke has³o");
-                return;
-            }
-           
-
-            if (!this.Email.Text.Contains('@') || !this.Email.Text.Contains('.'))
-            {
-                MessageBox.Show("Wpisz Poprawny E-mail!", "Niepoprawny E-mail", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                Email.Text = string.Empty;
-                return;
-            }
-
-            
-
-
-
-            string accountnumber = gennumber();
-            string sex = checksex();
-            if (sex == null)
-            {
-                return;
-            }
-
-
-            Account noweKonto = new Account(email, password, name, surname, accountnumber, dataurodzenia.SelectionStart);
-            noweKonto.Sex = sex;
-            konta.Add(noweKonto);
-
-            MessageBox.Show("Konto utworzone pomyœlnie.\n" +
-                "P³eæ: " + noweKonto.Sex + "\n" +
-                "Imiê: " + noweKonto.Name + "\n" +
-                "Nazwisko: " + noweKonto.Surname + "\n" +
-                "Numer konta: " + noweKonto.AccountNumber + "\n" +
-                "Email: " + noweKonto.Email + "\n" +
-                "Has³o: " + noweKonto.Password + "\n" +
-                "Data urodzenia: " + noweKonto.DateOfBirth.ToShortDateString());
-                
-
-           
-            id++;
-            label1.Text = "Liczba zarejestrowanych kont: " + id;
-
-            clear();
-            Debug.WriteLine("Lista wszystkich kont:");
-            foreach (var account in konta)
-            {
-                account.DisplayData();
-            }
+            check();
         }
 
         void clear()
@@ -180,7 +120,61 @@ namespace Bankaccount
         private void passmail_TextChanged(object sender, EventArgs e)
         {
 
-           
+
+
+
+        }
+
+
+        void check()
+        {
+
+            string name = nazwa.Text;
+            string surname = Surname.Text;
+            string email = Email.Text;
+            string password = passmail.Text;
+
+            if (string.IsNullOrEmpty(name) || string.IsNullOrEmpty(surname) || !dateSelected)
+            {
+                MessageBox.Show("Proszê wprowadziæ poprawne dane");
+                return;
+            }
+            else if (!Email.Text.Contains('@') || !Email.Text.Contains('.'))
+            {
+                MessageBox.Show("Wpisz poprawny e-mail!", "Niepoprawny E-mail", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Email.Text = string.Empty;
+                return;
+            }
+
+            string accountNumber = gennumber();
+            string sex = checksex();
+            if (sex == null)
+            {
+                return;
+            }
+
+            Account noweKonto = new Account(email, password, name, surname, accountNumber, dataurodzenia.SelectionStart);
+            noweKonto.Sex = sex; 
+            MessageBox.Show("Konto utworzone pomyœlnie.\n" +
+                "P³eæ: " + noweKonto.Sex + "\n" +
+                "Imiê: " + noweKonto.Name + "\n" +
+                "Nazwisko: " + noweKonto.Surname + "\n" +
+                "Numer konta: " + noweKonto.AccountNumber + "\n" +
+                "Email: " + noweKonto.Email + "\n" +
+                "Data urodzenia: " + noweKonto.DateOfBirth.ToShortDateString());
+
+            clear(); 
+            label1.Text = "Liczba zarejestrowanych kont: " + Account.konta.Count; 
+
+
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Logowanie logowanie = new Logowanie();
+            logowanie.ShowDialog();
+            this.Hide();
 
 
         }

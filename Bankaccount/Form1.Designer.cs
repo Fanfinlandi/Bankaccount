@@ -41,6 +41,7 @@
             label2 = new Label();
             Email = new TextBox();
             passmail = new TextBox();
+            button2 = new Button();
             SuspendLayout();
             // 
             // button1
@@ -81,7 +82,7 @@
             // 
             // dataurodzenia
             // 
-            dataurodzenia.Location = new Point(206, 124);
+            dataurodzenia.Location = new Point(206, 145);
             dataurodzenia.Name = "dataurodzenia";
             dataurodzenia.TabIndex = 4;
             dataurodzenia.Visible = false;
@@ -156,11 +157,22 @@
             passmail.TabIndex = 11;
             passmail.TextChanged += passmail_TextChanged;
             // 
+            // button2
+            // 
+            button2.Location = new Point(366, 392);
+            button2.Name = "button2";
+            button2.Size = new Size(75, 23);
+            button2.TabIndex = 12;
+            button2.Text = "Zaloguj sie";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button2);
             Controls.Add(passmail);
             Controls.Add(Email);
             Controls.Add(label2);
@@ -196,5 +208,6 @@
         private Label label2;
         private TextBox Email;
         private TextBox passmail;
+        private Button button2;
     }
 }
